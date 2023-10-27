@@ -13,6 +13,7 @@
         --gray-400:#94a3b8;
         --purple: #7c3aed;
         --gray-200: #e2e8f0;
+        --white:#fff;
     }
     /* numero = 20 */
     header{
@@ -78,7 +79,7 @@
     login input::placeholder{
         color: var(--gray-400);
     }
-
+    
     .login a{
         color: var(--purple);
         text-decoration: none;
@@ -89,4 +90,18 @@
     .login a:hover{
         text-decoration: underline;
     }
+
+    .login button{
+        margin-top: 1rem;
+        padding-block: 1rem;
+        width: 100%;
+        background: var(--purple);
+        border: none;
+        border-radius: 0.25rem;
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--white);
+
+    }
+
     
