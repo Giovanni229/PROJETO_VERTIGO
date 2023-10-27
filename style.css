@@ -14,6 +14,7 @@
         --purple: #7c3aed;
         --gray-200: #e2e8f0;
         --white:#fff;
+        --ligth-purple:#9f67ff;
     }
     /* numero = 20 */
     header{
@@ -105,6 +106,12 @@
 
     }
 
+    .login button:hover {
+            background: var(--ligth-purple);
+            transition: 0.3s;
+
+    }
+
     .login > p{
         color: var(--gray-600);
     }
@@ -118,6 +125,8 @@
         display: none;
     }
 
+    
+
     @media(min-width:1000px){
         body{
             display: flex;
@@ -128,6 +137,7 @@
             justify-content: flex-start;
             margin:2.5rem  7rem 7rem;
             height: fit-content;
+            
         }
 
         header img{
@@ -142,11 +152,21 @@
 
         .conteudo{
             width: 100%;
+            display: flex;
+            flex-direction :column;
+            align-items: center;
         }
 
         .bg-dasktop{
             display: block;
             width: 100%;
+        }
+
+        .descricao h1{
+            font-size: 2.25rem;
+        }
+        .descricao p{
+            font-size: 1rem;
         }
 
     }
