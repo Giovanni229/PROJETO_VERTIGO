@@ -114,10 +114,19 @@
         font-size: 1rem;
     }
     
+    .bg-dasktop{
+        display: none;
+    }
+
     @media(min-width:1000px){
+        body{
+            display: flex;
+        }
+
         header {
             background: none;
             justify-content: flex-start;
+            padding-inline: 7rem;
         }
 
         header img{
@@ -126,6 +135,10 @@
 
         main{
             padding-inline: 7rem;
+        }
+
+        .bg-dasktop{
+            display: block;
         }
 
     }
